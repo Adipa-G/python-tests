@@ -1,3 +1,6 @@
+import os, sys
+sys.path.append(os.path.join(os.path.dirname(__file__),"..\..\..","hellomodule"))
+
 import unittest
 from hellomodule import helloText
 
