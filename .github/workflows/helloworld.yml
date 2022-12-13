@@ -1,0 +1,19 @@
+name: helloWorld
+run-name: Hello World Test
+on: [push]
+jobs:
+  jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Test
+        run: |
+          cd helloworld\hellomodule
+          py -m unittest
+      - run: echo "🍏 This job's status is ${{ job.status }}."
