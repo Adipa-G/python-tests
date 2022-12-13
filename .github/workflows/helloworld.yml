@@ -13,6 +13,6 @@ jobs:
           python-version: "3.9"
       - name: Test
         run: |
-          cd helloworld\hellomodule
+          cd helloworld/hellomodule
           py -m unittest
       - run: echo "🍏 This job's status is ${{ job.status }}."
