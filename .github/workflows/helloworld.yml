@@ -1,6 +1,6 @@
 name: helloWorld
 run-name: Hello World Test
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
